@@ -1,1 +1,38 @@
-<!doctype html><html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>UTET CTET Hard Quiz</title><link rel="stylesheet" href="style.css"></head><body><header><h1>UTET & CTET Hard Level Quiz</h1><p>CPD • Hindi • Sanskrit • Science • Math • SST</p></header><main><div class="panel"><label>विषय चुनें</label><select id="subject"><option value="ALL">सभी विषय</option></select><button id="start">Quiz शुरू करें</button></div><section id="quiz" class="hide"><div class="top"><b id="counter"></b><b id="score"></b></div><div class="card"><div id="question"></div><div id="options"></div><div id="feedback"></div><div id="concept"></div><button id="next" class="hide">अगला प्रश्न</button></div></section></main><script src="questions.js"></script><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CTET UTET Logic Master</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>CTET • UTET Logic Master</h1>
+  <p>Most Important • Hard • Logic Based Questions</p>
+</header>
+
+<nav>
+  <button onclick="filterSubject('All')">All</button>
+  <button onclick="filterSubject('CDP')">CDP</button>
+  <button onclick="filterSubject('Hindi')">Hindi</button>
+  <button onclick="filterSubject('English')">English</button>
+  <button onclick="filterSubject('Maths')">Maths</button>
+  <button onclick="filterSubject('Science')">Science</button>
+  <button onclick="filterSubject('SST')">SST</button>
+  <button onclick="filterSubject('Sanskrit')">Sanskrit</button>
+</nav>
+
+<main>
+  <section class="hero">
+    <h2>Hard Questions with Logic</h2>
+    <p>हर उत्तर के साथ Concept और Logic दिया गया है ताकि केवल रटने के बजाय समझ विकसित हो।</p>
+  </section>
+  <div id="stats"></div>
+  <div id="quiz"></div>
+</main>
+
+<footer>Education Samadhan • CTET & UTET Practice Series</footer>
+<script src="script.js"></script>
+</body>
+</html>
